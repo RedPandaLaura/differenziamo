@@ -1,0 +1,45 @@
+[{
+  "color": "mixed",
+  "level": 1,
+  "isShown": false,
+  "image": "assets/mixed.png"
+},
+  {
+    "color": "plastic",
+    "level": 1,
+    "isShown": false,
+    "image": "assets/plastic.png"
+  },
+  {
+
+    "color": "glass",
+    "level": 1,
+    "isShown": false,
+    "image": "assets/glass.png"
+
+  },
+  {
+
+    "color": "paper",
+    "level": 1,
+    "isShown": false,
+    "image": "assets/paper.png"
+
+  },
+  {
+
+    "color": "organic",
+    "level": 2,
+    "isShown": false,
+    "image": "assets/organic.png"
+
+  },
+  {
+
+    "color": "raee",
+    "level": 3,
+    "isShown": false,
+    "image": "assets/raee.png"
+
+  }
+]
