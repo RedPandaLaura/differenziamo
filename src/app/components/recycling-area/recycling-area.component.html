@@ -1,0 +1,14 @@
+<div class="containter">
+  <div class="area">
+    <div *ngFor="let waste of elements">
+      <app-flip-card-waste *ngIf="waste.level == gameLevel" [elementInfo]="waste" (elementCheck)="setCheckedElement($event)"></app-flip-card-waste>
+    </div>
+  </div>
+  <div class="area">
+    <div *ngFor="let can of trashCans">
+      <div class="selectable-bin" (click)="sortWasteinBin(can.color)">
+      <img class="bin-element" *ngIf="can.level <= gameLevel" src="{{can.image}}" alt="{{can.color}}" />
+      </div>
+    </div>
+  </div>
+</div>

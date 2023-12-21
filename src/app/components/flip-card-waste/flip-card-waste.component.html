@@ -1,0 +1,29 @@
+<!--<div class="scene scene--card">
+  <div class="card" (click)="toggleFlip()" [@flipState]="flip">
+    <div class="card__face card__face--front">
+      <img class="imageCard" src="{{elementInfo.image}}" />
+    </div>
+    <div class="card__face card__face--back">{{elementInfo.description}}
+    </div>
+  </div>
+</div>-->
+
+<div class="cardContainer inactive">
+  <div class="card" (click)="toggleFlip()" [@flipState]="flip">
+    <div class="side front">
+      <img class="img" src="{{elementInfo.image}}">
+      <div class="info">
+        <h2>{{elementInfo.name}}</h2>
+      </div>
+    </div>
+    <div class="side back">
+      <div class="info">
+        <h2>{{elementInfo.description}}</h2>
+      </div>
+    </div>
+  </div>
+  <mat-checkbox [checked]="elementInfo.checked" [disabled]="elementInfo.disabled" (change)="setCheckbox(elementInfo.id)">  <div class="answer" >{{infoLabel}} </div></mat-checkbox>
+
+</div>
+
+<!-- Aggiungere label che dice "Corretto! Va nel *cartone*/ Sbagliato! Va in *plastica*"-->

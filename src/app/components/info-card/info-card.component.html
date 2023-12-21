@@ -1,0 +1,16 @@
+<div class="card">
+  <p>Hi there! This is an everyday task: waste sorting! Your job here is to correctly separate rubbish. </p>
+  <p>Every element has a double-face card, if you're not sure where to put it, remember to click on it and read the description. <br>
+      The system is based on the Milan waste sorting. Do you need a refresh? <u><a (click)="goToNewPage()">Go here</a></u></p>
+  <p><strong>How to play:</strong> first select the elements and then click on the trash bin that you need. Once that every element is sorted go on the next level.<br>
+  If you want to restart the game, just click the button.</p>
+  <p>There are 3 levels on this game, are you up for the challange? </p>
+
+  <div class="buttons">
+    <button mat-flat-button *ngIf="gameLevel === 0" (click)="changeGameStatus(1)">Start!</button>
+    <button mat-flat-button *ngIf="gameLevel !== 0" (click)="changeGameStatus(0)">Reset</button>
+    <button mat-flat-button *ngIf="gameLevel !== 0" (click)="changeGameStatus(gameLevel + 1 )" [disabled]="gameLevel === 3">Next level</button>
+    <button mat-stroked-button class="scoreButton" [disabled]="true"> Score: {{score}}</button>
+  </div>
+
+</div>
