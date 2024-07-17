@@ -30,7 +30,7 @@ export class RecyclingAreaComponent implements OnInit {
 
   ngOnChanges(changes: SimpleChange){
     if (this.gameLevel === 1 && this.elements.length > 0){
-      this.elementsChecked = [];
+      this.elementsChecked = [];aaaaaaaaaaa
       for (let el of this.elements){
         el.checked = false;
         el.disabled = false;
